@@ -1,0 +1,20 @@
+from fpdf import FPDF
+
+pdf = FPDF() 
+
+pdf.add_page() 
+pdf.set_font("Arial", size = 15) 
+
+pdf.cell(200, 10, txt = "Record of Application",  
+         ln = 1, align = 'C') 
+  
+pdf.cell(200, 10, txt = "For submission to regulatory body.", 
+         ln = 2, align = 'C')
+       
+pdf.cell(200, 10, txt = "For submission to regulatory body.", 
+         ln = 2, align = 'C')
+         
+pdf.cell(200, 10, txt = "Customer Name: ",
+         ln = 3, align = 'L')
+         
+pdf.output("application_report.pdf")    
